@@ -23,6 +23,7 @@ def hangman():
     attempts_left = max_attempts
 
     while attempts_left > 0:
+
         print(f"Attempts left: {attempts_left}")
         print("Guessed letters:", ', '.join(sorted(guessed_letters)))
         print("Current word:", ''.join(['_' if letter not in guessed_letters else letter for letter in word]))
@@ -38,12 +39,10 @@ def hangman():
         if guess not in word:
             attempts_left -= 1
             print("Incorrect guess. Try again.")
-
             continue
         
         if '_' not in ''.join(['_' if letter not in guessed_letters else letter for letter in word]):
             print("Congratulations! You've guessed the word:", word)
-
             break
 
 hangman()

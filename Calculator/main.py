@@ -1,9 +1,6 @@
 def main():
 
-    '''
-    This program performs basic arithmetic operations.  
-    '''
-    print("Welcome to the Simple Calculator!")
+    print("Welcome to the Simple Calculator 😄!")
 
     print("<------------------------------------>")
 
@@ -41,6 +38,14 @@ def main():
     else:
         print("Error: Invalid operation!")
         return
+    
+    
+    again = input("\nDo you want to perform another calculation? (yes/no): ")
+    
+    if again.lower() == "yes":
+        main()
+    else:
+        print("Thank you for using the Calculator! 👍")
 
 main()
     
