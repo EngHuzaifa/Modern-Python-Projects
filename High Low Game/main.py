@@ -2,7 +2,7 @@ import random
 
 def high_low_score():
 
-    print("Welcome to the High Low Game")
+    print("Welcome to the High Low Game 👍")
 
     print("<------------------------------->")
 
@@ -18,7 +18,7 @@ def high_low_score():
             score += 1
             print(f"Your current score: {score}")
 
-            play_again = input("Do you want to play again? (Y/N): ").lower()
+            play_again = input("Do you want to play again? (y/n): ").lower()
 
             if play_again != 'y':
                 print("Thanks for playing")
@@ -26,10 +26,10 @@ def high_low_score():
 
         elif guess < number:
 
-            print("Too low! Try again.")
+            print("Too low! Try again 😢.")
 
         else:
-            print("Too high! Try again.")
+            print("Too high! Try again 🛩️.")
 
 high_low_score()
    
